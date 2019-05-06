@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Student Name: Sumbul Sharma 
+     Student ID: 991427608 -->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Quiz for Sumbul Sharma </title>
+
+
+<style>
+	h2 {
+		text-align: center;
+		color: darkblue;
+		font-style: italic;
+	}
+	.emparea {
+		width: 40%;
+		height: 200px;
+		background: bisque;
+	}
+	#e0 {float:left; top:0; left:0;}
+	#e1 {float:right; top:0; right:0;}
+	#e2 {float:left; bottom:0; left:0;}
+	#e3 {float:right; bottom:0; right:0;}
+
+	.backarea {
+		width: 40%;
+		height: 200px;
+		background: lightblue;
+	}
+	#b0 {float:left; top:0; left:0;}
+	#b1 {float:right; top:0; right:0;}
+	#b2 {float:left; bottom:0; left:0;}
+	#b3 {float:right; bottom:0; right:0;}
+	
+	.ename {
+		font-size: 1.25em;
+		font-weight: bold;
+		color: darkblue;
+		text-align: center;
+	}
+	.imgformat {
+		text-align: center;
+	}
+</style>
+
+</head>
+<body>
+		<h1> <span id="cname">Quiz for Sumbul Sharma</span></h1>
+		<section id="myoutput">
+		</section>
+		 <script src="//code.jquery.com/jquery-latest.min.js" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../jquery.js"><\/script>')</script>
+
+  <script>
+	function handleResponse(xml)
+    { 
+		$(xml).find("question").each(function(){
+		        $("#myoutput").append("Question :- "+$(this).find("query").text()+" - " +" <br>");
+				$("#myoutput").append("<br>");
+				$("#myoutput").append("<img src='"+$(this).find("picture").text()+"'> - " +" <br>");
+				$(this).find("opt").each(function(){
+						$("#myoutput").append("Ans :- "+$(this).text() + " <br>");
+				});
+				});
+	}
+	$(document).ready(function(){	
+	
+		$("#b0").hide();
+		$("#b1").hide();
+		$("#b2").hide();
+		$("#b3").hide();
+		
+		$.ajax({
+			type: "GET",
+			url: "q1a1.xml",
+			dataType: "xml",
+			success: handleResponse
+		});		
+	
+
+	});
+</script>
+	</body>		
+
+</html>

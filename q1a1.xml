@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!-- Template for A1 XML - only one question shown for reference - DO NOT USE this question in your XML ... come up with 5 questions -->
+<questionBank title="Sumbul Sharma">
+<question name="XML">
+<picture>images/xml.jpg</picture>
+<details>
+<query marks="3" bonus="yes">How to select elements from the DOM ?</query>
+<chapter>1</chapter>
+<hint></hint>
+</details>
+<options>
+<opt>$()</opt>
+<opt>*()</opt>
+<opt>${}</opt>
+<opt>*{}</opt>
+</options>
+<answer>
+<correct>a</correct>
+<description>All other are incorrect</description>
+</answer>
+</question>
+
+<question name="XML">
+<picture>images/xml.jpg</picture>
+<details>
+<query marks="3" bonus="yes">How to overwrites the selector area?</query>
+<chapter>1</chapter>
+<hint></hint>
+</details>
+<options>
+<opt>$(selector)</opt>
+<opt>*$(selector).html("")</opt>
+<opt>$(selector).html("")</opt>
+<opt>$(selector).html{""}</opt>
+</options>
+<answer>
+<correct>c</correct>
+<description>All other are incorrect</description>
+</answer>
+</question>
+
+<question name="XML">
+<picture>images/xml.jpg</picture>
+<details>
+<query marks="3" bonus="yes">How to Appends to the selector area?</query>
+<chapter>1</chapter>
+<hint></hint>
+</details>
+<options>
+<opt>$(selector)</opt>
+<opt>$(selector).append("")</opt>
+<opt>$(selector).html("")</opt>
+<opt>$(selector).append{""}</opt>
+</options>
+<answer>
+<correct>b</correct>
+<description>All other are incorrect</description>
+</answer>
+</question>
+
+<question name="XML">
+<picture>images/xml.jpg</picture>
+<details>
+<query marks="3" bonus="yes">Event method for browser window is resized ?</query>
+<chapter>3</chapter>
+<hint></hint>
+</details>
+<options>
+<opt>.resize{ }</opt>
+<opt>.resize( )</opt>
+<opt>.resize( ).html("")</opt>
+<opt>$.resize( )</opt>
+</options>
+<answer>
+<correct>b</correct>
+<description>All other are incorrect</description>
+</answer>
+</question>
+
+<question name="XML">
+<picture>images/xml.jpg</picture>
+<details>
+<query marks="3" bonus="yes">EVERYTHING in an XML document is a node?</query>
+<chapter>3</chapter>
+<hint></hint>
+</details>
+<options>
+<opt>Yes</opt>
+<opt>No</opt>
+</options>
+<answer>
+<correct>a</correct>
+<description>All other are incorrect</description>
+</answer>
+
+
+
+<profile>This question tests students memory ...</profile>
+</question>
+</questionBank>
